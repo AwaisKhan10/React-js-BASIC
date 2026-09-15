@@ -5,8 +5,8 @@
   "type": "module",
   "description": "Professional React enterprise starter kit with design tokens, theming, i18n, and RTL",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.jsx",
     "lint:fix": "eslint . --ext .js,.jsx --fix",
