@@ -1,0 +1,9 @@
+.delta {
+  color: var(--color-success);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.search {
+  min-width: min(100%, 16rem);
+}

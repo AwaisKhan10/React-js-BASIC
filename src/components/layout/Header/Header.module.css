@@ -1,0 +1,38 @@
+.header {
+  block-size: var(--header-height);
+  background-color: var(--color-surface);
+  border-block-end: 1px solid var(--color-border);
+}
+
+.sticky {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: var(--z-sticky);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  block-size: 100%;
+  padding-inline: var(--space-4);
+}
+
+.start,
+.center,
+.end {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-inline-size: 0;
+}
+
+.center {
+  flex: 1;
+  justify-content: center;
+}
+
+.end {
+  justify-content: flex-end;
+}

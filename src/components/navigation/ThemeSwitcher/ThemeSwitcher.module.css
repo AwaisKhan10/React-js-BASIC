@@ -1,0 +1,49 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+}
+
+.btn,
+.iconBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.btn {
+  padding: var(--space-1);
+}
+
+.iconBtn {
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.btn:hover,
+.iconBtn:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-hover);
+}
+
+.btn:focus-visible,
+.iconBtn:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+.active {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}

@@ -1,0 +1,5 @@
+.skeleton{display:block;background:linear-gradient(90deg,var(--color-background-secondary),var(--color-surface-hover),var(--color-background-secondary));background-size:200% 100%;animation:shimmer 1.2s ease-in-out infinite;border-radius:var(--radius-md)}
+.text{height:0.9rem;margin-block:0.35rem}
+.circle{border-radius:var(--radius-full)}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+@media (prefers-reduced-motion:reduce){.skeleton{animation:none}}

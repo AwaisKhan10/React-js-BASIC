@@ -1,0 +1,79 @@
+.viewport {
+  position: fixed;
+  inset-block-end: var(--space-4);
+  inset-inline: var(--space-4);
+  z-index: var(--z-toast);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  min-inline-size: min(20rem, 100%);
+  max-inline-size: 24rem;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface-elevated);
+  box-shadow: var(--shadow-lg);
+  color: var(--color-text-primary);
+}
+
+.body {
+  flex: 1;
+  min-inline-size: 0;
+}
+
+.title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.description {
+  margin-block-start: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.close {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+}
+
+.close:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+.primary,
+.info {
+  border-inline-start: 3px solid var(--color-info);
+}
+
+.secondary {
+  border-inline-start: 3px solid var(--color-secondary);
+}
+
+.success {
+  border-inline-start: 3px solid var(--color-success);
+}
+
+.warning {
+  border-inline-start: 3px solid var(--color-warning);
+}
+
+.error {
+  border-inline-start: 3px solid var(--color-error);
+}

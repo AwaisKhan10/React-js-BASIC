@@ -1,0 +1,5 @@
+.avatar{display:inline-flex;align-items:center;justify-content:center;border-radius:var(--radius-avatar);background:var(--color-primary-light);color:var(--color-primary-dark);font-weight:var(--font-weight-semibold);overflow:hidden;flex-shrink:0}
+.img{width:100%;height:100%;object-fit:cover}
+.sm{width:2rem;height:2rem;font-size:var(--font-size-xs)}
+.md{width:2.5rem;height:2.5rem;font-size:var(--font-size-sm)}
+.lg{width:3.25rem;height:3.25rem;font-size:var(--font-size-md)}

@@ -1,0 +1,4 @@
+/* NumberInput reuses Input styles; module reserved for future spin-button chrome. */
+.placeholder {
+  display: none;
+}

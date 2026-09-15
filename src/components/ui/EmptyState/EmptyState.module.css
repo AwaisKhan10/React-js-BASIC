@@ -1,0 +1,3 @@
+.root{display:flex;flex-direction:column;align-items:center;text-align:center;gap:var(--space-3);padding:var(--space-10) var(--space-6)}
+.icon{color:var(--color-text-muted)}
+.actions{display:flex;gap:var(--space-3);flex-wrap:wrap;justify-content:center;margin-block-start:var(--space-2)}

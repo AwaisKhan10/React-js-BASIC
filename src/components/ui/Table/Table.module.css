@@ -1,0 +1,62 @@
+.scroll {
+  inline-size: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background-color: var(--color-surface);
+}
+
+.table {
+  inline-size: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+}
+
+.head {
+  background-color: var(--color-background-secondary);
+}
+
+.stickyHeader thead th {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: var(--z-sticky);
+  background-color: var(--color-background-secondary);
+}
+
+.th,
+.td {
+  padding-block: var(--space-3);
+  padding-inline: var(--space-4);
+  text-align: start;
+  border-block-end: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.th {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.td {
+  color: var(--color-text-secondary);
+}
+
+.row:hover .td {
+  background-color: var(--color-surface-hover);
+}
+
+.striped tbody tr:nth-child(even) .td {
+  background-color: var(--color-background-secondary);
+}
+
+.caption {
+  padding: var(--space-3);
+  text-align: start;
+  color: var(--color-text-muted);
+  caption-side: bottom;
+}
+
+.empty {
+  padding: var(--space-6);
+}

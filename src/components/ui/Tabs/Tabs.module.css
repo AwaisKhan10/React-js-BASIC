@@ -1,0 +1,5 @@
+.list{display:flex;gap:var(--space-1);border-block-end:1px solid var(--color-border);overflow-x:auto}
+.tab{appearance:none;border:0;background:transparent;padding:var(--space-3) var(--space-4);color:var(--color-text-secondary);font-weight:var(--font-weight-medium);cursor:pointer;border-block-end:2px solid transparent;margin-block-end:-1px;white-space:nowrap}
+.tab[aria-selected='true']{color:var(--color-primary);border-block-end-color:var(--color-primary)}
+.tab:hover{color:var(--color-text-primary)}
+.panel{padding-block-start:var(--space-4)}

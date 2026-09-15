@@ -1,0 +1,185 @@
+{
+  "app": {
+    "name": "انٹرپرائز اسٹارٹر",
+    "tagline": "قابلِ توسیع مصنوعات کے لیے پیشہ ورانہ React بنیاد"
+  },
+  "common": {
+    "actions": {
+      "save": "محفوظ کریں",
+      "cancel": "منسوخ",
+      "delete": "حذف کریں",
+      "edit": "ترمیم",
+      "close": "بند کریں",
+      "submit": "جمع کرائیں",
+      "confirm": "تصدیق کریں",
+      "back": "واپس",
+      "next": "آگے",
+      "search": "تلاش",
+      "filter": "فلٹر",
+      "refresh": "تازہ کریں",
+      "create": "بنائیں",
+      "view": "دیکھیں",
+      "retry": "دوبارہ کوشش",
+      "clear": "صاف کریں",
+      "apply": "لاگو کریں",
+      "reset": "ری سیٹ",
+      "upload": "اپ لوڈ",
+      "download": "ڈاؤن لوڈ",
+      "yes": "ہاں",
+      "no": "نہیں"
+    },
+    "status": {
+      "active": "فعال",
+      "inactive": "غیر فعال",
+      "pending": "زیرِ التوا",
+      "completed": "مکمل",
+      "failed": "ناکام",
+      "draft": "مسودہ"
+    },
+    "labels": {
+      "email": "ای میل",
+      "password": "پاس ورڈ",
+      "name": "نام",
+      "search": "تلاش",
+      "language": "زبان",
+      "theme": "تھیم",
+      "actions": "اقدامات",
+      "status": "حیثیت",
+      "date": "تاریخ",
+      "description": "تفصیل",
+      "role": "کردار",
+      "user": "صارف"
+    },
+    "validation": {
+      "required": "یہ خانہ ضروری ہے",
+      "invalidEmail": "درست ای میل ایڈریس درج کریں",
+      "minLength": "کم از کم {{count}} حروف ہونے چاہئیں",
+      "maxLength": "زیادہ سے زیادہ {{count}} حروف ہو سکتے ہیں",
+      "passwordTooShort": "پاس ورڈ کم از کم {{count}} حروف کا ہونا چاہیے",
+      "mustMatch": "خانے ایک جیسے ہونے چاہئیں"
+    },
+    "loading": "لوڈ ہو رہا ہے…",
+    "optional": "اختیاری",
+    "required": "ضروری"
+  },
+  "nav": {
+    "home": "ہوم",
+    "dashboard": "ڈیش بورڈ",
+    "designSystem": "ڈیزائن سسٹم",
+    "settings": "ترتیبات",
+    "profile": "پروفائل",
+    "logout": "لاگ آؤٹ",
+    "menu": "مینو"
+  },
+  "theme": {
+    "light": "روشن",
+    "dark": "تاریک",
+    "system": "سسٹم",
+    "label": "تھیم"
+  },
+  "language": {
+    "label": "زبان",
+    "en": "انگریزی",
+    "ur": "اردو",
+    "ar": "عربی"
+  },
+  "home": {
+    "title": "انٹرپرائز ایپس تیزی سے بنائیں",
+    "subtitle": "ٹوکنز، تھیم، مقامی سازی اور رسائی پذیری — پروڈکشن کے لیے تیار۔",
+    "ctaDashboard": "ڈیش بورڈ کھولیں",
+    "ctaDesignSystem": "ڈیزائن سسٹم دیکھیں",
+    "featuresTitle": "آپ کو کیا ملتا ہے",
+    "featureTokens": "رنگ، ٹائپ اور اسپیسنگ کے لیے ڈیزائن ٹوکنز",
+    "featureTheme": "روشن، تاریک اور سسٹم تھیم کی سپورٹ",
+    "featureI18n": "انگریزی، اردو اور عربی (RTL) کے ساتھ i18n",
+    "featureA11y": "قابلِ رسائی اجزاء اور کی بورڈ دوستانہ انٹرفیس"
+  },
+  "dashboard": {
+    "title": "ڈیش بورڈ",
+    "subtitle": "صارفین، آمدنی اور حالیہ آرڈرز کا جائزہ",
+    "stats": {
+      "users": "صارفین",
+      "revenue": "آمدنی",
+      "orders": "آرڈرز",
+      "growth": "ترقی"
+    },
+    "recentOrders": "حالیہ آرڈرز",
+    "searchPlaceholder": "آرڈرز تلاش کریں…",
+    "filters": "فلٹرز",
+    "emptyTitle": "ابھی کوئی آرڈر نہیں",
+    "emptyDescription": "جب آرڈرز آئیں گے تو وہ یہاں دکھائی دیں گے۔",
+    "loading": "ڈیش بورڈ لوڈ ہو رہا ہے…",
+    "table": {
+      "id": "شناخت",
+      "customer": "گاہک",
+      "status": "حیثیت",
+      "amount": "رقم",
+      "date": "تاریخ",
+      "actions": "اقدامات"
+    }
+  },
+  "designSystem": {
+    "title": "ڈیزائن سسٹم",
+    "subtitle": "ڈیزائن ٹوکنز پر مبنی قابلِ استعمال اجزاء",
+    "sections": {
+      "colors": "رنگ",
+      "typography": "ٹائپوگرافی",
+      "buttons": "بٹن",
+      "inputs": "ان پٹ",
+      "cards": "کارڈز",
+      "badges": "بیجز",
+      "alerts": "الرٹس",
+      "modal": "موڈل",
+      "dropdown": "ڈراپ ڈاؤن",
+      "tabs": "ٹیبز",
+      "table": "جدول",
+      "loading": "لوڈنگ",
+      "empty": "خالی حالتیں",
+      "theme": "تھیم",
+      "localization": "مقامی سازی",
+      "forms": "فارمز",
+      "feedback": "فیڈ بیک"
+    }
+  },
+  "states": {
+    "empty": {
+      "title": "ابھی یہاں کچھ نہیں",
+      "description": "اس وقت دکھانے کے لیے کوئی مواد نہیں ہے۔"
+    },
+    "error": {
+      "title": "کچھ غلط ہو گیا",
+      "description": "ہم آپ کی درخواست مکمل نہیں کر سکے۔ دوبارہ کوشش کریں۔"
+    },
+    "success": {
+      "title": "کامیاب",
+      "description": "آپ کی تبدیلیاں کامیابی سے محفوظ ہو گئیں۔"
+    },
+    "loading": {
+      "title": "لوڈ ہو رہا ہے",
+      "description": "ڈیٹا حاصل کرنے تک انتظار کریں۔"
+    },
+    "network": {
+      "title": "کنکشن کا مسئلہ",
+      "description": "اپنا نیٹ ورک چیک کریں اور دوبارہ کوشش کریں۔"
+    },
+    "permission": {
+      "title": "رسائی مسترد",
+      "description": "آپ کو یہ صفحہ دیکھنے کی اجازت نہیں ہے۔"
+    },
+    "notFound": {
+      "title": "صفحہ نہیں ملا",
+      "description": "آپ جس صفحے کی تلاش کر رہے ہیں وہ موجود نہیں۔",
+      "backHome": "ہوم پر واپس جائیں"
+    }
+  },
+  "auth": {
+    "login": "لاگ ان",
+    "logout": "لاگ آؤٹ",
+    "email": "ای میل",
+    "password": "پاس ورڈ"
+  },
+  "footer": {
+    "rights": "© {{year}} جملہ حقوق محفوظ ہیں۔",
+    "builtWith": "React Enterprise Starter کے ساتھ تیار کردہ"
+  }
+}

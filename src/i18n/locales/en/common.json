@@ -1,0 +1,185 @@
+{
+  "app": {
+    "name": "Enterprise Starter",
+    "tagline": "A professional React foundation for scalable products"
+  },
+  "common": {
+    "actions": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "edit": "Edit",
+      "close": "Close",
+      "submit": "Submit",
+      "confirm": "Confirm",
+      "back": "Back",
+      "next": "Next",
+      "search": "Search",
+      "filter": "Filter",
+      "refresh": "Refresh",
+      "create": "Create",
+      "view": "View",
+      "retry": "Retry",
+      "clear": "Clear",
+      "apply": "Apply",
+      "reset": "Reset",
+      "upload": "Upload",
+      "download": "Download",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "pending": "Pending",
+      "completed": "Completed",
+      "failed": "Failed",
+      "draft": "Draft"
+    },
+    "labels": {
+      "email": "Email",
+      "password": "Password",
+      "name": "Name",
+      "search": "Search",
+      "language": "Language",
+      "theme": "Theme",
+      "actions": "Actions",
+      "status": "Status",
+      "date": "Date",
+      "description": "Description",
+      "role": "Role",
+      "user": "User"
+    },
+    "validation": {
+      "required": "This field is required",
+      "invalidEmail": "Enter a valid email address",
+      "minLength": "Must be at least {{count}} characters",
+      "maxLength": "Must be at most {{count}} characters",
+      "passwordTooShort": "Password must be at least {{count}} characters",
+      "mustMatch": "Fields must match"
+    },
+    "loading": "Loading…",
+    "optional": "Optional",
+    "required": "Required"
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "designSystem": "Design System",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Log out",
+    "menu": "Menu"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "label": "Theme"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "ur": "Urdu",
+    "ar": "Arabic"
+  },
+  "home": {
+    "title": "Build enterprise apps faster",
+    "subtitle": "Tokens, theming, localization, and accessibility — ready for production.",
+    "ctaDashboard": "Open dashboard",
+    "ctaDesignSystem": "Explore design system",
+    "featuresTitle": "What you get",
+    "featureTokens": "Design tokens for consistent color, type, and spacing",
+    "featureTheme": "Light, dark, and system theme support",
+    "featureI18n": "i18n with English, Urdu, and Arabic (RTL)",
+    "featureA11y": "Accessible components and keyboard-friendly UI"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Overview of users, revenue, and recent orders",
+    "stats": {
+      "users": "Users",
+      "revenue": "Revenue",
+      "orders": "Orders",
+      "growth": "Growth"
+    },
+    "recentOrders": "Recent orders",
+    "searchPlaceholder": "Search orders…",
+    "filters": "Filters",
+    "emptyTitle": "No orders yet",
+    "emptyDescription": "When orders come in, they will appear here.",
+    "loading": "Loading dashboard…",
+    "table": {
+      "id": "ID",
+      "customer": "Customer",
+      "status": "Status",
+      "amount": "Amount",
+      "date": "Date",
+      "actions": "Actions"
+    }
+  },
+  "designSystem": {
+    "title": "Design System",
+    "subtitle": "Reusable primitives powered by design tokens",
+    "sections": {
+      "colors": "Colors",
+      "typography": "Typography",
+      "buttons": "Buttons",
+      "inputs": "Inputs",
+      "cards": "Cards",
+      "badges": "Badges",
+      "alerts": "Alerts",
+      "modal": "Modal",
+      "dropdown": "Dropdown",
+      "tabs": "Tabs",
+      "table": "Table",
+      "loading": "Loading",
+      "empty": "Empty states",
+      "theme": "Theme",
+      "localization": "Localization",
+      "forms": "Forms",
+      "feedback": "Feedback"
+    }
+  },
+  "states": {
+    "empty": {
+      "title": "Nothing here yet",
+      "description": "There is no content to show right now."
+    },
+    "error": {
+      "title": "Something went wrong",
+      "description": "We could not complete your request. Please try again."
+    },
+    "success": {
+      "title": "Success",
+      "description": "Your changes were saved successfully."
+    },
+    "loading": {
+      "title": "Loading",
+      "description": "Please wait while we fetch your data."
+    },
+    "network": {
+      "title": "Connection problem",
+      "description": "Check your network and try again."
+    },
+    "permission": {
+      "title": "Access denied",
+      "description": "You do not have permission to view this page."
+    },
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you are looking for does not exist.",
+      "backHome": "Back to home"
+    }
+  },
+  "auth": {
+    "login": "Log in",
+    "logout": "Log out",
+    "email": "Email",
+    "password": "Password"
+  },
+  "footer": {
+    "rights": "© {{year}} All rights reserved.",
+    "builtWith": "Built with React Enterprise Starter"
+  }
+}

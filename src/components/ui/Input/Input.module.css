@@ -1,0 +1,121 @@
+.wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-input);
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.input,
+.select {
+  height: var(--control-height-md);
+  padding-inline: var(--space-3);
+}
+
+.textarea {
+  min-height: 6.5rem;
+  padding: var(--space-3);
+  resize: vertical;
+  line-height: var(--line-height-normal);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.input:hover:not(:disabled):not(:read-only),
+.textarea:hover:not(:disabled):not(:read-only),
+.select:hover:not(:disabled) {
+  border-color: var(--color-text-muted);
+}
+
+.input:focus-visible,
+.textarea:focus-visible,
+.select:focus-visible {
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 4px var(--color-focus-ring);
+  outline: none;
+}
+
+.input:disabled,
+.textarea:disabled,
+.select:disabled {
+  background: var(--color-background-secondary);
+  color: var(--color-text-disabled);
+  cursor: not-allowed;
+}
+
+.hasError {
+  border-color: var(--color-error);
+}
+
+.hasIconStart {
+  padding-inline-start: calc(var(--space-3) + var(--icon-sm) + var(--space-2));
+}
+
+.hasIconEnd {
+  padding-inline-end: calc(var(--space-3) + var(--icon-sm) + var(--space-2));
+}
+
+.iconStart,
+.iconEnd {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  color: var(--color-text-muted);
+}
+
+.iconStart {
+  inset-inline-start: var(--space-3);
+  pointer-events: none;
+}
+
+.iconEnd {
+  inset-inline-end: var(--space-3);
+}
+
+.iconBtn {
+  pointer-events: auto;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  display: inline-flex;
+}
+
+.iconBtn:hover {
+  color: var(--color-text-primary);
+}
+
+.loading {
+  position: absolute;
+  inset-inline-end: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--icon-sm);
+  height: var(--icon-sm);
+  animation: spin 0.7s linear infinite;
+  color: var(--color-text-muted);
+}
+
+@keyframes spin {
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}

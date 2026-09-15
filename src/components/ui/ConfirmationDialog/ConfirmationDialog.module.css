@@ -1,0 +1,4 @@
+/* ConfirmationDialog composes Modal + Button; reserved for dialog-specific tweaks. */
+.root {
+  display: contents;
+}

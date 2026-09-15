@@ -1,0 +1,127 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-background);
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+}
+
+.sidebar {
+  display: none;
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  border-inline-end: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--space-4);
+  position: sticky;
+  top: var(--header-height);
+  align-self: flex-start;
+  min-height: calc(100vh - var(--header-height));
+  max-height: calc(100vh - var(--header-height));
+  overflow: auto;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .menuBtn {
+    display: none;
+  }
+}
+
+.sidebarTitle {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  padding-inline: var(--space-3);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.content {
+  flex: 1;
+  padding: var(--space-6) var(--space-4);
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding: var(--space-8) var(--space-6);
+  }
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.mark {
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-sm);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.mobileList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.mobileLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+}
+
+.mobileLink:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-text-primary);
+}
+
+.mobileActive {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}

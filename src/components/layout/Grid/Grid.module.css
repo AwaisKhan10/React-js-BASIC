@@ -1,0 +1,5 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns, 12), minmax(0, 1fr));
+  min-inline-size: 0;
+}

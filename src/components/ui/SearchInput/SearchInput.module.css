@@ -1,0 +1,35 @@
+.clear {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  pointer-events: auto;
+}
+
+.clear:hover {
+  color: var(--color-text-primary);
+}
+
+.clear:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+.clear svg {
+  inline-size: var(--icon-sm);
+  block-size: var(--icon-sm);
+}
+
+.input {
+  /* search inputs often show a native clear — hide it for consistency */
+}
+
+.input::-webkit-search-cancel-button {
+  appearance: none;
+}
