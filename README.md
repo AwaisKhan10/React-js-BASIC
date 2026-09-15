@@ -78,6 +78,14 @@ Use the header **Theme** control: Light / Dark / System.
 
 Preference persists in `localStorage` (`app.theme`). System follows OS preference.
 
+## Docs for the team
+
+| Doc | For whom |
+| --- | --- |
+| **[BEGINNER_GUIDE.md](./BEGINNER_GUIDE.md)** | Beginners — full A→Z (folders, files, why, examples) |
+| [ARCHITECTURE.md](./ARCHITECTURE.md) | Short architecture overview |
+| [DEVELOPMENT_GUIDELINES.md](./DEVELOPMENT_GUIDELINES.md) | Coding rules (do / don't) |
+
 ## Localization
 
 Use the header **Language** control: English / اردو / العربية.
@@ -85,7 +93,7 @@ Use the header **Language** control: English / اردو / العربية.
 - English → LTR
 - Urdu & Arabic → RTL (`document.documentElement.dir`)
 
-See [ARCHITECTURE.md](./ARCHITECTURE.md) and [DEVELOPMENT_GUIDELINES.md](./DEVELOPMENT_GUIDELINES.md).
+See **[BEGINNER_GUIDE.md](./BEGINNER_GUIDE.md)** (start here if you are new), plus [ARCHITECTURE.md](./ARCHITECTURE.md) and [DEVELOPMENT_GUIDELINES.md](./DEVELOPMENT_GUIDELINES.md).
 
 ## Project layout (high level)
 
