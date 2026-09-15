@@ -12,7 +12,7 @@ This starter is designed so **global decisions live in one place**.
 | Theme preference | `ThemeProvider` + `localStorage` |
 | Language + document direction | `LocalizationProvider` + i18n |
 | User-facing copy | `src/i18n/locales/*` |
-| HTTP access | `src/lib/services/apiClient.ts` |
+| HTTP access | `src/lib/services/apiClient.js` |
 
 ### Examples
 
@@ -48,8 +48,7 @@ features/<name>/
   components/
   hooks/
   services/
-  types/
-  index.ts
+  index.js
 ```
 
 Do **not** put shared buttons/inputs here.
@@ -64,9 +63,9 @@ Design system CSS. Components consume tokens; they do not hardcode hex values.
 
 ### `src/i18n`
 
-- `config.ts` — language metadata (label, dir)
+- `config.js` — language metadata (label, dir)
 - `locales/<lang>/common.json` — translations
-- `index.ts` — i18next init + `changeAppLanguage`
+- `index.js` — i18next init + `changeAppLanguage`
 
 ### `src/lib/services`
 
@@ -99,11 +98,11 @@ const { language, setLanguage, isRtl } = useLocalization();
 
 ## Routing
 
-Centralized in `src/app/router.tsx` with lazy-loaded pages and `AppLayout` chrome.
+Centralized in `src/app/router.jsx` with lazy-loaded pages and `AppLayout` chrome.
 
 ## Extension points
 
 - **New language**: add `LANGUAGE_META` entry + `locales/<code>/common.json`.
-- **New feature**: scaffold under `features/`, add route in `router.tsx`.
+- **New feature**: scaffold under `features/`, add route in `router.jsx`.
 - **New brand**: retune brand primitives in `tokens.css`.
 - **Real API**: implement methods in `lib/services/*` using `apiClient`.

@@ -1,12 +1,12 @@
 # React Enterprise Starter
 
-Professional React + TypeScript foundation for production applications.
+Professional React + JavaScript foundation for production applications.
 
 **One global change → the entire application updates** via design tokens, theme providers, and i18n.
 
 ## Stack
 
-- React 19 + TypeScript
+- React 19 + JavaScript (JSX)
 - Vite
 - React Router
 - CSS Variables / Design Tokens
@@ -30,12 +30,11 @@ Open [http://localhost:5173](http://localhost:5173).
 | Command | Purpose |
 | --- | --- |
 | `npm run dev` | Development server |
-| `npm run build` | Typecheck + production build |
+| `npm run build` | Production build |
 | `npm run preview` | Preview production build |
 | `npm run lint` | ESLint |
 | `npm run format` | Prettier |
-| `npm run typecheck` | TypeScript only |
-| `npm run check` | typecheck + lint + build |
+| `npm run check` | lint + build |
 
 ## Routes
 

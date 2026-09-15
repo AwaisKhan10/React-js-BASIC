@@ -122,25 +122,14 @@ const inputCss = `.wrap {
 write('src/components/ui/Input/Input.module.css', inputCss);
 
 write(
-  'src/components/ui/Input/Input.tsx',
-  `import { forwardRef, useId, type InputHTMLAttributes, type ReactNode } from 'react';
+  'src/components/ui/Input/Input.jsx',
+  `import { forwardRef, useId } from 'react';
 import { LoaderCircle } from 'lucide-react';
 import { FormField, describedBy } from '@/components/ui/FormField';
 import { cn } from '@/utils/cn';
 import styles from './Input.module.css';
 
-export interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
-  label?: ReactNode;
-  hint?: ReactNode;
-  helperText?: ReactNode;
-  error?: ReactNode;
-  leftIcon?: ReactNode;
-  rightIcon?: ReactNode;
-  loading?: boolean;
-  fullWidth?: boolean;
-}
-
-export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
+export const Input = forwardRef(function Input(
   {
     id,
     label,
@@ -201,6 +190,6 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
 `,
 );
 
-write('src/components/ui/Input/index.ts', `export { Input } from './Input';\nexport type { InputProps } from './Input';\n`);
+write('src/components/ui/Input/index.js', `export { Input } from './Input';\n`);
 
 console.log('generator partial — continuing in next chunk');

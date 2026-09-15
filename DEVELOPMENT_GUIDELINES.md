@@ -9,7 +9,6 @@ Rules for teams using this starter for years.
 - Duplicate components that already exist in `components/ui`.
 - Put API/`fetch` calls directly inside presentational UI.
 - Use physical CSS (`margin-left`, `left`) when logical properties work.
-- Use `any` without a documented reason.
 - Commit secrets or real `.env` values.
 - Use `!important` unless fighting a third-party constraint (comment why).
 - Create one-off page CSS that should be a shared token or component.
@@ -20,10 +19,9 @@ Rules for teams using this starter for years.
 - Use shared components for buttons, inputs, cards, typography, layout.
 - Support RTL via logical CSS and document direction.
 - Keep accessibility: labels, focus, keyboard, `aria-*` where needed.
-- Prefer TypeScript-strict patterns and `import type`.
 - Keep feature logic inside `features/`.
 - Keep shared UI inside `components/`.
-- Name files by component (`Button.tsx`, `Button.module.css`, `index.ts`).
+- Name files by component (`Button.jsx`, `Button.module.css`, `index.js`).
 
 ## Naming
 
@@ -37,7 +35,7 @@ Rules for teams using this starter for years.
 
 Prefer the `@/` alias:
 
-```ts
+```js
 import { Button } from '@/components/ui/Button';
 import { useTheme } from '@/app/providers/ThemeProvider';
 ```
@@ -46,24 +44,24 @@ import { useTheme } from '@/app/providers/ThemeProvider';
 
 1. Add folder under `components/ui/<Name>/`.
 2. Implement with CSS module using **tokens only**.
-3. Export via `index.ts` and optionally `components/ui/index.ts`.
+3. Export via `index.js` and optionally `components/ui/index.js`.
 4. Document visually on `/design-system`.
 5. Ensure LTR + RTL, light + dark, keyboard access.
 
 ## Forms
 
 - Wrap controls with `FormField` (label, hint, helper, error).
-- Validation helpers in `src/lib/validation.ts` return **i18n keys**.
+- Validation helpers in `src/lib/validation.js` return **i18n keys**.
 - Render messages with `t(result.messageKey, result.messageOptions)`.
 
 ## API / services
 
-```ts
-// features/orders/services/orderService.ts
+```js
+// features/orders/services/orderService.js
 import { apiClient } from '@/lib/services';
 
 export const orderService = {
-  list: () => apiClient.get<Order[]>('/orders'),
+  list: () => apiClient.get('/orders'),
 };
 ```
 
